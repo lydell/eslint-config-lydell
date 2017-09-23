@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-lydell",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Simon Lydell",
+  "description": "Kinda strict Prettier-friendly ESLint config.",
+  "repository": "lydell/eslint-config-lydell",
+  "files": [
+    "flowtype.js",
+    "index.js",
+    "react.js"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "prettier"
+  ],
+  "scripts": {
+    "test:lint": "eslint .",
+    "test:lint-rules": "eslint index.js --config test-config/.eslintrc.js --format json",
+    "test:ava": "ava",
+    "test:prettier-friendly": "eslint --print-config .eslintrc.test.js | eslint-config-prettier-check",
+    "test": "npm run test:lint && npm run test:ava && npm run test:prettier-friendly"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "eslint": "^4.7.2",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.3.0",
+    "prettier": "^1.7.0",
+    "rimraf": "^2.6.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=4.4.0"
+  }
+}
