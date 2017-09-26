@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lydell",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "author": "Simon Lydell",
   "description": "Kinda strict Prettier-friendly ESLint config.",
