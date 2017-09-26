@@ -7,6 +7,7 @@ module.exports = {
     "flowtype/no-dupe-keys": "error",
     "flowtype/no-primitive-constructor-types": "error",
     "flowtype/no-types-missing-file-annotation": "error",
+    "flowtype/no-unused-expressions": "error",
     "flowtype/require-parameter-type": [
       "error",
       { excludeArrowFunctions: true },
