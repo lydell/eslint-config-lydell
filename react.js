@@ -3,7 +3,6 @@
 module.exports = {
   rules: {
     "react/display-name": "error",
-    "react/jsx-curly-brace-presence": ["error", "never"],
     "react/jsx-key": "error",
     "react/jsx-no-comment-textnodes": "error",
     "react/jsx-no-duplicate-props": "error",
