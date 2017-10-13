@@ -8,6 +8,7 @@ module.exports = {
       "error",
       {
         exceptMethods: [
+          // Exclude React stuff.
           "componentDidMount",
           "componentDidUpdate",
           "componentWillMount",

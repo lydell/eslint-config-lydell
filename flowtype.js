@@ -12,6 +12,15 @@ module.exports = {
       "error",
       { excludeArrowFunctions: true },
     ],
+    "flowtype/require-return-type": [
+      "error",
+      "always",
+      {
+        excludeArrowFunctions: true,
+        // Exclude React stuff.
+        excludeMatching: ["^[A-Z]", "[Rr]ender"],
+      },
+    ],
     "flowtype/require-valid-file-annotation": [
       "error",
       "always",
