@@ -109,7 +109,6 @@ module.exports = {
     "no-this-before-super": "error",
     "no-throw-literal": "error",
     "no-undef": "error",
-    "no-unexpected-multiline": "error",
     "no-unmodified-loop-condition": "error",
     "no-unneeded-ternary": "error",
     "no-unreachable": "error",
