@@ -141,7 +141,6 @@ module.exports = {
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
-    "require-await": "error",
     "require-yield": "error",
     "spaced-comment": "error",
     "symbol-description": "error",
