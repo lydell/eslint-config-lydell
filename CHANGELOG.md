@@ -1,3 +1,9 @@
+### Version 6.0.0 (2017-11-19)
+
+- Changed: Added `{ exceptAfterSingleLine: true }` to
+  [lines-between-class-members], since it is nice when declaring the types of
+  non-method class members in Flow.
+
 ### Version 5.0.0 (2017-11-19)
 
 - Added: [react/button-has-type].
