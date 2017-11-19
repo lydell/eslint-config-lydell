@@ -1,3 +1,7 @@
+### Version 5.0.0 (2017-11-19)
+
+- Added: [react/button-has-type].
+
 ### Version 4.0.0 (2017-11-04)
 
 - Removed: [no-unexpected-multiline]. It can conflict with Prettier.
@@ -30,6 +34,7 @@
 [lines-between-class-members]: https://eslint.org/docs/rules/lines-between-class-members
 [no-return-await]: https://eslint.org/docs/rules/no-return-await
 [no-unexpected-multiline]: https://eslint.org/docs/rules/no-unexpected-multiline
+[react/button-has-type]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
 [react/jsx-curly-brace-presence]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
 [require-await]: https://eslint.org/docs/rules/require-await
 [yannickcr/eslint-plugin-react#1449]: https://github.com/yannickcr/eslint-plugin-react/issues/1449
