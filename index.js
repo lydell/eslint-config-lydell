@@ -28,7 +28,11 @@ module.exports = {
     "func-name-matching": "error",
     "func-style": ["error", "declaration"],
     "init-declarations": "error",
-    "lines-between-class-members": "error",
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { exceptAfterSingleLine: true },
+    ],
     "new-cap": ["error", { newIsCap: true, capIsNew: false }],
     "no-alert": "error",
     "no-array-constructor": "error",
