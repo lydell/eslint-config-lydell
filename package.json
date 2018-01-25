@@ -7,6 +7,7 @@
   "repository": "lydell/eslint-config-lydell",
   "files": [
     "flowtype.js",
+    "import.js",
     "index.js",
     "react.js"
   ],
@@ -27,6 +28,7 @@
     "eslint": "4.16.0",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-flowtype": "2.42.0",
+    "eslint-plugin-import": "2.8.0",
     "eslint-plugin-prettier": "2.5.0",
     "eslint-plugin-react": "7.5.1",
     "prettier": "1.10.2",

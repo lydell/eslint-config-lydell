@@ -34,6 +34,7 @@ file.
 A few ESLint plugins are supported as well:
 
 - [eslint-plugin-flowtype]
+- [eslint-plugin-import]
 - [eslint-plugin-react]
 
 Add extra "extends" entries for the plugins you use like so:
@@ -43,6 +44,7 @@ Add extra "extends" entries for the plugins you use like so:
   "extends": [
     "lydell",
     "lydell/flowtype",
+    "lydell/import",
     "lydell/react"
   ]
 }
@@ -55,10 +57,12 @@ Add extra "extends" entries for the plugins you use like so:
   "extends": [
     "lydell",
     "lydell/flowtype",
+    "lydell/import",
     "lydell/react"
   ],
   "plugins": [
     "flowtype",
+    "import",
     "react",
     "prettier"
   ],
@@ -82,6 +86,7 @@ Add extra "extends" entries for the plugins you use like so:
 [MIT](LICENSE).
 
 [eslint-plugin-flowtype]: https://github.com/gajus/eslint-plugin-flowtype
+[eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
 [eslint-plugin-react]: https://github.com/yannickcr/eslint-plugin-react
 [Prettier]: https://github.com/prettier/prettier
 [travis-badge]: https://travis-ci.org/lydell/eslint-config-lydell.svg?branch=master

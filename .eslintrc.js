@@ -1,8 +1,8 @@
 "use strict";
 
 module.exports = {
-  extends: ["./index.js"],
-  plugins: ["prettier"],
+  extends: ["./index.js", "./import.js"],
+  plugins: ["import", "prettier"],
   env: {
     es6: true,
     node: true,
