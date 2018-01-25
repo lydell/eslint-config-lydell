@@ -1,3 +1,7 @@
+### Version 6.1.0 (2018-01-25)
+
+- Added: [eslint-plugin-import].
+
 ### Version 6.0.0 (2017-11-19)
 
 - Changed: Added `{ exceptAfterSingleLine: true }` to
@@ -35,6 +39,7 @@
 
 - Initial release.
 
+[eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
 [flowtype/no-unused-expressions]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-unused-expressions
 [flowtype/require-return-type]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-require-return-type
 [lines-between-class-members]: https://eslint.org/docs/rules/lines-between-class-members
