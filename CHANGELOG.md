@@ -5,6 +5,8 @@
   that you can merge into yours. This means that only `.eslintrc.js` (with the
   `.js` extension) is supported from now on. See the example config in the
   readme for how to use this new setup.
+* Changed: Node.js 4 is no longer supported. Node.js 6 is now the oldest
+  supported version.
 * Added: [react/default-props-match-prop-types] and
   [react/no-unused-prop-types], but only when not using Flow. That's why the
   above change was made.
