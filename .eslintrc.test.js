@@ -1,18 +1,12 @@
 "use strict";
 
-const pkg = require("./package.json");
+const baseRules = require(".");
 
 module.exports = {
-  extends: pkg.files
-    .filter(name => name.indexOf("/") === -1)
-    .map(ruleFileName => `./${ruleFileName}`),
-  plugins: ["prettier"].concat(
-    pkg.files
-      .filter(name => name.indexOf("/") === -1 && name !== "index.js")
-      .map(ruleFileName => ruleFileName.replace(/\.js$/, ""))
-  ),
+  plugins: ["flowtype", "import", "prettier", "react"],
   env: {
     es6: true,
     node: true,
   },
+  rules: baseRules({ flow: true, import: true, react: true }),
 };

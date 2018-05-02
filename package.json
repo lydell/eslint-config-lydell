@@ -6,10 +6,7 @@
   "description": "Kinda strict Prettier-friendly ESLint config.",
   "repository": "lydell/eslint-config-lydell",
   "files": [
-    "flowtype.js",
-    "import.js",
-    "index.js",
-    "react.js"
+    "index.js"
   ],
   "keywords": [
     "eslint",

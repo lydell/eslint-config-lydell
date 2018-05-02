@@ -20,13 +20,17 @@ Install eslint-config-lydell:
 $ npm install --save-dev eslint-config-lydell
 ```
 
-Then, add eslint-config-lydell to the "extends" array in your `.eslintrc.*`
-file.
+Then, merge in the rules in your `.eslintrc.js` file. (You _have_ to use `.js`
+for your ESLint config; see below.)
 
-```json
-{
-  "extends": ["lydell"]
-}
+```js
+const baseRules = require("eslint-config-lydell");
+
+module.exports = {
+  rules: Object.assign({}, baseRules(), {
+    // Your own rules here.
+  }),
+};
 ```
 
 A few ESLint plugins are supported as well:
@@ -35,15 +39,17 @@ A few ESLint plugins are supported as well:
 * [eslint-plugin-import]
 * [eslint-plugin-react]
 
-You need to install those plugins yourself.
+Note that you need to install those plugins yourself. (They are not included in the config because of [ESLint issue #3458].)
 
-Add extra "extends" entries for the plugins you use like so:
+Enable rules for the plugins you use like so:
 
-```json
-{
-  "extends": ["lydell", "lydell/flowtype", "lydell/import", "lydell/react"]
-}
+```js
+baseRules({ flow: true, import: true, react: true });
 ```
+
+The reason this config is `require`:d instead of using the `extends` field
+(which is the standard), is to easily allow `flow` to opt out from some base and
+`react` rules, for example.
 
 ## Example configuration
 
@@ -59,58 +65,75 @@ It also shows how to set up linting for config files, [Storybook stories] and
 [Jest] tests, as well as some globals you might want to use (instead of the
 bloated [browser env]; prefix uncommon globals with `window.`).
 
-```json
-{
-  "extends": ["lydell", "lydell/flowtype", "lydell/import", "lydell/react"],
-  "plugins": [
-    "css-modules",
-    "flowtype",
-    "flowtype-errors",
+```js
+const baseRules = require("eslint-config-lydell");
+
+module.exports = {
+  plugins: [
+    // Provides rules for these plugins:
     "import",
-    "prettier",
+    "flowtype",
     "react",
-    "sort-imports-es6-autofix"
+
+    // Recommended plugins:
+    "prettier",
+    "sort-imports-es6-autofix",
+
+    // Recommended if using CSS Modules or Flow:
+    "css-modules",
+    "flowtype-errors",
   ],
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+  parserOptions: {
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
-  "env": {
-    "es6": true
+  env: {
+    es6: true,
+    // node: true, // For Node.js apps.
+    // browser: true, // NOT recommended; see below.
   },
-  "globals": {
-    "DEBUG": false,
-    "console": false,
-    "document": false,
-    "fetch": false,
-    "window": false
+  // Recommended: List the few common globals you actually use. Prefix other
+  // globals you need with `window.`.
+  globals: {
+    DEBUG: false,
+    console: false,
+    document: false,
+    fetch: false,
+    window: false,
   },
-  "rules": {
-    "css-modules/no-undef-class": "error",
-    "flowtype-errors/show-errors": "error",
-    "prettier/prettier": "error",
-    "sort-imports-es6-autofix/sort-imports-es6": "error"
-  },
-  "overrides": [
+  rules: Object.assign(
+    {},
+    // Merge in base rules, and enable the extra rules you want.
+    baseRules({ flow: true, import: true, react: true }),
+    // Add more rules and override rules here:
     {
-      "files": [".*.js", "*.config.js", ".storybook/*.js"],
-      "env": { "node": true },
-      "flowtype/require-valid-file-annotation": "off"
+      "css-modules/no-undef-class": "error",
+      "flowtype-errors/show-errors": "error",
+      "prettier/prettier": "error",
+      "sort-imports-es6-autofix/sort-imports-es6": "error",
+    }
+  ),
+  // Example on how to configure certain config files and such.
+  overrides: [
+    {
+      files: [".*.js", "*.config.js", ".storybook/*.js"],
+      env: { node: true },
+      "flowtype/require-valid-file-annotation": "off",
     },
     {
-      "files": ["*.test.js"],
-      "env": { "jest": true }
+      files: ["*.test.js"],
+      env: { jest: true },
     },
     {
-      "files": ["stories.js"],
-      "globals": {
-        "module": false
-      }
-    }
-  ]
-}
+      files: ["stories.js"],
+      globals: {
+        module: false,
+      },
+    },
+  ],
+};
 ```
 
 Recommended .eslintignore:
@@ -129,7 +152,7 @@ Recommended [prettier.config.js]:
 
 ```js
 module.exports = {
-  trailingComma: "es5"
+  trailingComma: "es5",
 };
 ```
 
@@ -139,6 +162,7 @@ module.exports = {
 
 [browser env]: https://github.com/sindresorhus/globals/blob/4ce1b7aa14ffc799a4e7b867e7d91c634ef81efb/globals.json#L223
 [css modules]: https://github.com/css-modules/css-modules
+[eslint issue #3458]: https://github.com/eslint/eslint/issues/3458
 [eslint-plugin-css-modules]: https://github.com/atfzl/eslint-plugin-css-modules
 [eslint-plugin-flowtype-errors]: https://github.com/amilajack/eslint-plugin-flowtype-errors
 [eslint-plugin-flowtype]: https://github.com/gajus/eslint-plugin-flowtype
