@@ -1,10 +1,12 @@
 "use strict";
 
-const test = require("ava");
 const childProcess = require("child_process");
 const fs = require("fs");
 const path = require("path");
+
+const test = require("ava");
 const rimraf = require("rimraf");
+
 const pkg = require("../package.json");
 const eslintTestConfig = require("../.eslintrc.test");
 
