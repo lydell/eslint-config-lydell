@@ -3,7 +3,6 @@
 module.exports = {
   rules: {
     "react/button-has-type": "error",
-    "react/display-name": "error",
     "react/jsx-key": "error",
     "react/jsx-no-comment-textnodes": "error",
     "react/jsx-no-duplicate-props": "error",

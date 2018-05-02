@@ -4,22 +4,6 @@ module.exports = {
   rules: {
     "array-callback-return": "error",
     "arrow-body-style": "error",
-    "class-methods-use-this": [
-      "error",
-      {
-        exceptMethods: [
-          // Exclude React stuff.
-          "componentDidMount",
-          "componentDidUpdate",
-          "componentWillMount",
-          "componentWillReceiveProps",
-          "componentWillUnmount",
-          "componentWillUpdate",
-          "render",
-          "shouldComponentUpdate",
-        ],
-      },
-    ],
     "consistent-return": "error",
     "constructor-super": "error",
     "default-case": "error",
@@ -71,7 +55,6 @@ module.exports = {
     "no-implicit-coercion": "error",
     "no-implicit-globals": "error",
     "no-implied-eval": "error",
-    "no-inner-declarations": "error",
     "no-invalid-regexp": "error",
     "no-invalid-this": "error",
     "no-irregular-whitespace": "error",
@@ -84,7 +67,6 @@ module.exports = {
     "no-mixed-requires": "error",
     "no-multi-assign": "error",
     "no-multi-str": "error",
-    "no-negated-condition": "error",
     "no-new": "error",
     "no-new-func": "error",
     "no-new-object": "error",
