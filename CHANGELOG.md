@@ -1,43 +1,43 @@
 ### Version 6.1.0 (2018-01-25)
 
-- Added: [eslint-plugin-import].
+* Added: [eslint-plugin-import].
 
 ### Version 6.0.0 (2017-11-19)
 
-- Changed: Added `{ exceptAfterSingleLine: true }` to
+* Changed: Added `{ exceptAfterSingleLine: true }` to
   [lines-between-class-members], since it is nice when declaring the types of
   non-method class members in Flow.
 
 ### Version 5.0.0 (2017-11-19)
 
-- Added: [react/button-has-type].
+* Added: [react/button-has-type].
 
 ### Version 4.0.0 (2017-11-04)
 
-- Removed: [no-unexpected-multiline]. It can conflict with Prettier.
-- Removed: [require-await]. Marking functions with `async` have more uses than
+* Removed: [no-unexpected-multiline]. It can conflict with Prettier.
+* Removed: [require-await]. Marking functions with `async` have more uses than
   simply enabling `await` syntax. I guarantees that the function always returns
   a `Promise` and never throws.
-- Added: [no-return-await]. `return await` is always useless.
-- Added: [lines-between-class-members]. Some breathing room is nice.
+* Added: [no-return-await]. `return await` is always useless.
+* Added: [lines-between-class-members]. Some breathing room is nice.
 
 ### Version 3.0.0 (2017-10-13)
 
-- Added: [flowtype/require-return-type].
+* Added: [flowtype/require-return-type].
 
 ### Version 2.0.1 (2017-09-26)
 
-- Removed: [react/jsx-curly-brace-presence]. It is unfortunately too buggy:
+* Removed: [react/jsx-curly-brace-presence]. It is unfortunately too buggy:
   [yannickcr/eslint-plugin-react#1449].
 
 ### Version 2.0.0 (2017-09-26)
 
-- Added: [flowtype/no-unused-expressions].
-- Added: [react/jsx-curly-brace-presence].
+* Added: [flowtype/no-unused-expressions].
+* Added: [react/jsx-curly-brace-presence].
 
 ### Version 1.0.0 (2017-09-23)
 
-- Initial release.
+* Initial release.
 
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
 [flowtype/no-unused-expressions]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-unused-expressions
