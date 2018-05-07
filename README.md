@@ -120,7 +120,9 @@ module.exports = {
     {
       files: [".*.js", "*.config.js", ".storybook/*.js"],
       env: { node: true },
-      "flowtype/require-valid-file-annotation": "off",
+      rules: {
+        "flowtype/require-valid-file-annotation": "off",
+      },
     },
     {
       files: ["*.test.js"],
