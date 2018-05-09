@@ -9,8 +9,6 @@ Kinda strict [Prettier]-friendly ESLint config.
 * Forbid confusing code.
 * Prefer ES2015+ syntax.
 * Avoid rules that require arbitrary configuration.
-* Main file contains only core rules. Rules for other plugins are in separate
-  files.
 
 ## Installation
 
