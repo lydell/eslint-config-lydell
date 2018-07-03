@@ -3,10 +3,10 @@
 const baseRules = require(".");
 
 module.exports = {
-  plugins: ["flowtype", "import", "prettier", "react"],
+  plugins: ["flowtype", "import", "jest", "prettier", "react"],
   env: {
     es6: true,
     node: true,
   },
-  rules: baseRules({ flow: true, import: true, react: true }),
+  rules: baseRules({ flow: true, import: true, jest: true, react: true }),
 };

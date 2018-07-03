@@ -35,6 +35,7 @@ A few ESLint plugins are supported as well:
 
 * [eslint-plugin-flowtype]
 * [eslint-plugin-import]
+* [eslint-plugin-jest]
 * [eslint-plugin-react]
 
 Note that you need to install those plugins yourself. (They are not included in the config because of [ESLint issue #3458].)
@@ -42,7 +43,7 @@ Note that you need to install those plugins yourself. (They are not included in 
 Enable rules for the plugins you use like so:
 
 ```js
-baseRules({ flow: true, import: true, react: true });
+baseRules({ flow: true, import: true, jest: true, react: true });
 ```
 
 The reason this config is `require`:d instead of using the `extends` field
@@ -70,6 +71,7 @@ module.exports = {
   plugins: [
     // Provides rules for these plugins:
     "import",
+    "jest",
     "flowtype",
     "react",
 
@@ -104,7 +106,7 @@ module.exports = {
   rules: Object.assign(
     {},
     // Merge in base rules, and enable the extra rules you want.
-    baseRules({ flow: true, import: true, react: true }),
+    baseRules({ flow: true, import: true, jest: true, react: true }),
     // Add more rules and override rules here:
     {
       "css-modules/no-undef-class": "error",
@@ -125,6 +127,8 @@ module.exports = {
     {
       files: ["*.test.js"],
       env: { jest: true },
+      // You can also enable Jest rules only for test files if you want.
+      rules: baseRules({builtin: false, jest: true}),
     },
     {
       files: ["stories.js"],
@@ -167,6 +171,7 @@ module.exports = {
 [eslint-plugin-flowtype-errors]: https://github.com/amilajack/eslint-plugin-flowtype-errors
 [eslint-plugin-flowtype]: https://github.com/gajus/eslint-plugin-flowtype
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
+[eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
 [eslint-plugin-prettier]: https://github.com/prettier/eslint-plugin-prettier
 [eslint-plugin-react]: https://github.com/yannickcr/eslint-plugin-react
 [eslint-plugin-sort-imports-es6-autofix]: https://github.com/marudor/eslint-plugin-sort-imports-es6-autofix
