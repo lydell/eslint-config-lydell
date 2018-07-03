@@ -2,13 +2,13 @@
 
 Kinda strict [Prettier]-friendly ESLint config.
 
-* Only rules. No other config.
-* No rules that that are unnecessary or might conflict with [Prettier].
-* Find errors.
-* Avoid potential problems.
-* Forbid confusing code.
-* Prefer ES2015+ syntax.
-* Avoid rules that require arbitrary configuration.
+- Only rules. No other config.
+- No rules that that are unnecessary or might conflict with [Prettier].
+- Find errors.
+- Avoid potential problems.
+- Forbid confusing code.
+- Prefer ES2015+ syntax.
+- Avoid rules that require arbitrary configuration.
 
 ## Installation
 
@@ -33,10 +33,10 @@ module.exports = {
 
 A few ESLint plugins are supported as well:
 
-* [eslint-plugin-flowtype]
-* [eslint-plugin-import]
-* [eslint-plugin-jest]
-* [eslint-plugin-react]
+- [eslint-plugin-flowtype]
+- [eslint-plugin-import]
+- [eslint-plugin-jest]
+- [eslint-plugin-react]
 
 Note that you need to install those plugins yourself. (They are not included in the config because of [ESLint issue #3458].)
 
@@ -55,10 +55,10 @@ The reason this config is `require`:d instead of using the `extends` field
 This includes some extra recommended plugins, that don't need a ton of
 configuration:
 
-* [eslint-plugin-prettier]
-* [eslint-plugin-sort-imports-es6-autofix]
-* [eslint-plugin-flowtype-errors] \(if you use [Flow])
-* [eslint-plugin-css-modules] \(if you use [CSS Modules])
+- [eslint-plugin-prettier]
+- [eslint-plugin-sort-imports-es6-autofix]
+- [eslint-plugin-flowtype-errors] \(if you use [Flow])
+- [eslint-plugin-css-modules] \(if you use [CSS Modules])
 
 It also shows how to set up linting for config files, [Storybook stories] and
 [Jest] tests, as well as some globals you might want to use (instead of the
@@ -128,7 +128,7 @@ module.exports = {
       files: ["*.test.js"],
       env: { jest: true },
       // You can also enable Jest rules only for test files if you want.
-      rules: baseRules({builtin: false, jest: true}),
+      rules: baseRules({ builtin: false, jest: true }),
     },
     {
       files: ["stories.js"],

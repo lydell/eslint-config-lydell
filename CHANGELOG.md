@@ -1,64 +1,64 @@
 ### Version 7.0.0 (2018-01-25)
 
-* Changed: This package is no longer a collection of configs that you put into
+- Changed: This package is no longer a collection of configs that you put into
   the `extends` field, but instead exports a single function that returns rules
   that you can merge into yours. This means that only `.eslintrc.js` (with the
   `.js` extension) is supported from now on. See the example config in the
   readme for how to use this new setup.
-* Changed: Node.js 4 is no longer supported. Node.js 6 is now the oldest
+- Changed: Node.js 4 is no longer supported. Node.js 6 is now the oldest
   supported version.
-* Added: [react/default-props-match-prop-types] and
+- Added: [react/default-props-match-prop-types] and
   [react/no-unused-prop-types], but only when not using Flow. That's why the
   above change was made.
-* Changed: [no-undef] now has `{ typeof: true }`.
-* Added: [import/no-cycle], [import/no-self-import],
+- Changed: [no-undef] now has `{ typeof: true }`.
+- Added: [import/no-cycle], [import/no-self-import],
   [import/no-useless-path-segments] and [import/order]. Make sure to update
   [eslint-plugin-import] to a version supporting all of those.
-* Removed: [class-methods-use-this], [no-inner-declarations],
+- Removed: [class-methods-use-this], [no-inner-declarations],
   [no-negated-condition] and [react/display-name] because they caused more pain
   than gain or were irrelevant.
-* Improved: Example config in the readme.
+- Improved: Example config in the readme.
 
 ### Version 6.1.0 (2018-01-25)
 
-* Added: [eslint-plugin-import].
+- Added: [eslint-plugin-import].
 
 ### Version 6.0.0 (2017-11-19)
 
-* Changed: Added `{ exceptAfterSingleLine: true }` to
+- Changed: Added `{ exceptAfterSingleLine: true }` to
   [lines-between-class-members], since it is nice when declaring the types of
   non-method class members in Flow.
 
 ### Version 5.0.0 (2017-11-19)
 
-* Added: [react/button-has-type].
+- Added: [react/button-has-type].
 
 ### Version 4.0.0 (2017-11-04)
 
-* Removed: [no-unexpected-multiline]. It can conflict with Prettier.
-* Removed: [require-await]. Marking functions with `async` have more uses than
+- Removed: [no-unexpected-multiline]. It can conflict with Prettier.
+- Removed: [require-await]. Marking functions with `async` have more uses than
   simply enabling `await` syntax. I guarantees that the function always returns
   a `Promise` and never throws.
-* Added: [no-return-await]. `return await` is always useless.
-* Added: [lines-between-class-members]. Some breathing room is nice.
+- Added: [no-return-await]. `return await` is always useless.
+- Added: [lines-between-class-members]. Some breathing room is nice.
 
 ### Version 3.0.0 (2017-10-13)
 
-* Added: [flowtype/require-return-type].
+- Added: [flowtype/require-return-type].
 
 ### Version 2.0.1 (2017-09-26)
 
-* Removed: [react/jsx-curly-brace-presence]. It is unfortunately too buggy:
+- Removed: [react/jsx-curly-brace-presence]. It is unfortunately too buggy:
   [yannickcr/eslint-plugin-react#1449].
 
 ### Version 2.0.0 (2017-09-26)
 
-* Added: [flowtype/no-unused-expressions].
-* Added: [react/jsx-curly-brace-presence].
+- Added: [flowtype/no-unused-expressions].
+- Added: [react/jsx-curly-brace-presence].
 
 ### Version 1.0.0 (2017-09-23)
 
-* Initial release.
+- Initial release.
 
 [class-methods-use-this]: https://eslint.org/docs/rules/class-methods-use-this
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
