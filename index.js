@@ -147,6 +147,8 @@ module.exports = function baseRules({
 
     flow
       ? {
+          "flowtype/array-style-complex-type": "error",
+          "flowtype/array-style-simple-type": "error",
           "flowtype/boolean-style": ["error", "boolean"],
           "flowtype/define-flow-type": "error",
           "flowtype/no-dupe-keys": "error",
@@ -219,6 +221,7 @@ module.exports = function baseRules({
           "react/no-typos": "error",
           "react/no-unescaped-entities": "error",
           "react/no-unknown-property": "error",
+          "react/no-unsafe": "error",
           "react/no-unused-prop-types": flow ? "off" : "error",
           "react/no-unused-state": "error",
           "react/prop-types": "error",
