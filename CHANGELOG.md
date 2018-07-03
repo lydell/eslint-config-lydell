@@ -1,3 +1,9 @@
+### Version 8.0.0 (2018-07-03)
+
+- Added: [react/no-unsafe]
+- Added: [flowtype/array-style-complex-type] and [flowtype/array-style-simple-type].
+- Added: [eslint-plugin-jest].
+
 ### Version 7.0.0 (2018-01-25)
 
 - Changed: This package is no longer a collection of configs that you put into
@@ -62,6 +68,9 @@
 
 [class-methods-use-this]: https://eslint.org/docs/rules/class-methods-use-this
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
+[eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
+[flowtype/array-style-complex-type]: https://github.com/gajus/eslint-plugin-flowtype#array-style-complex-type
+[flowtype/array-style-simple-type]: https://github.com/gajus/eslint-plugin-flowtype#array-style-simple-type
 [flowtype/no-unused-expressions]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-unused-expressions
 [flowtype/require-return-type]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-require-return-type
 [import/no-cycle]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md
@@ -78,6 +87,7 @@
 [react/default-props-match-prop-types]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
 [react/display-name]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
 [react/jsx-curly-brace-presence]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
+[react/no-unsafe]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unsafe.md
 [react/no-unused-prop-types]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
 [require-await]: https://eslint.org/docs/rules/require-await
 [yannickcr/eslint-plugin-react#1449]: https://github.com/yannickcr/eslint-plugin-react/issues/1449
