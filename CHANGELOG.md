@@ -1,3 +1,7 @@
+### Version 8.0.1 (2018-07-21)
+
+- Removed: [no-catch-shadow], which was deprecated in [ESLint 5.1.0].
+
 ### Version 8.0.0 (2018-07-03)
 
 - Added: [react/no-unsafe]
@@ -67,6 +71,7 @@
 - Initial release.
 
 [class-methods-use-this]: https://eslint.org/docs/rules/class-methods-use-this
+[eslint 5.1.0]: https://eslint.org/blog/2018/07/eslint-v5.1.0-released
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
 [eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
 [flowtype/array-style-complex-type]: https://github.com/gajus/eslint-plugin-flowtype#array-style-complex-type
@@ -78,6 +83,7 @@
 [import/no-useless-path-segments]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
 [import/order]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
 [lines-between-class-members]: https://eslint.org/docs/rules/lines-between-class-members
+[no-catch-shadow]: https://eslint.org/docs/rules/no-catch-shadow
 [no-inner-declarations]: https://eslint.org/docs/rules/no-inner-declarations
 [no-negated-condition]: https://eslint.org/docs/rules/no-negated-condition
 [no-return-await]: https://eslint.org/docs/rules/no-return-await
