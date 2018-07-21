@@ -22,12 +22,12 @@
   },
   "devDependencies": {
     "ava": "0.25.0",
-    "eslint": "5.0.1",
+    "eslint": "5.2.0",
     "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-flowtype": "2.49.3",
+    "eslint-plugin-flowtype": "2.50.0",
     "eslint-plugin-import": "2.13.0",
-    "eslint-plugin-jest": "21.17.0",
-    "eslint-plugin-prettier": "2.6.1",
+    "eslint-plugin-jest": "21.18.0",
+    "eslint-plugin-prettier": "2.6.2",
     "eslint-plugin-react": "7.10.0",
     "prettier": "1.13.7",
     "rimraf": "2.6.2"
