@@ -32,7 +32,6 @@ module.exports = function baseRules({
           "no-buffer-constructor": "error",
           "no-caller": "error",
           "no-case-declarations": "error",
-          "no-catch-shadow": "error",
           "no-class-assign": "error",
           "no-compare-neg-zero": "error",
           "no-cond-assign": "error",
