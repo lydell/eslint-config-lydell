@@ -154,7 +154,6 @@ module.exports = function baseRules({
       ? {
           "flowtype/array-style-complex-type": "error",
           "flowtype/array-style-simple-type": "error",
-          "flowtype/boolean-style": ["error", "boolean"],
           "flowtype/define-flow-type": "error",
           "flowtype/no-dupe-keys": "error",
           "flowtype/no-primitive-constructor-types": "error",
