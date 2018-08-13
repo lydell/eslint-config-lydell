@@ -1,3 +1,7 @@
+### Version 8.0.2 (2018-08-13)
+
+- Removed: [flowtype/boolean-style]. It can conflict with Prettier.
+
 ### Version 8.0.1 (2018-07-21)
 
 - Removed: [no-catch-shadow], which was deprecated in [ESLint 5.1.0].
@@ -76,6 +80,7 @@
 [eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
 [flowtype/array-style-complex-type]: https://github.com/gajus/eslint-plugin-flowtype#array-style-complex-type
 [flowtype/array-style-simple-type]: https://github.com/gajus/eslint-plugin-flowtype#array-style-simple-type
+[flowtype/boolean-style]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-boolean-style
 [flowtype/no-unused-expressions]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-unused-expressions
 [flowtype/require-return-type]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-require-return-type
 [import/no-cycle]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md
