@@ -4,10 +4,9 @@ const childProcess = require("child_process");
 const fs = require("fs");
 const path = require("path");
 
-const test = require("ava");
 const rimraf = require("rimraf");
 
-const eslintTestConfig = require("../.eslintrc.test");
+const eslintTestConfig = require("../.eslintrc.all");
 
 const TEST_CONFIG_DIR = "test-config";
 
@@ -36,7 +35,7 @@ function createTestConfigDir() {
   );
 }
 
-test("There are no unknown rules", t => {
+test("there are no unknown rules", () => {
   const result = childProcess.spawnSync(
     "npm",
     ["run", "test:lint-rules", "--silent"],
@@ -46,11 +45,9 @@ test("There are no unknown rules", t => {
 
   const { messages } = output[0];
 
-  if (messages.length === 0) {
-    t.pass();
-  }
+  expect(messages.length).toBeGreaterThan(0);
 
   messages.forEach(message => {
-    t.notRegex(message.message, /rule\s+'[^']+'.*not found/);
+    expect(message.message).not.toMatch(/rule\s+'[^']+'.*not found/);
   });
 });
