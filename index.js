@@ -16,6 +16,7 @@ function baseRules({
           "arrow-body-style": "error",
           "consistent-return": "error",
           "constructor-super": "error",
+          curly: "error",
           "default-case": "error",
           "dot-notation": "error",
           "for-direction": "error",
