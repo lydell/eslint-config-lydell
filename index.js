@@ -1,6 +1,8 @@
 "use strict";
 
-module.exports = function baseRules({
+const globals = require("globals");
+
+function baseRules({
   builtin = true,
   flow = false,
   import: import_ = false,
@@ -254,4 +256,33 @@ module.exports = function baseRules({
         }
       : {}
   );
-};
+}
+
+const lowercaseBrowserGlobals = [
+  "cancelAnimationFrame",
+  "cancelIdleCallback",
+  "clearInterval",
+  "clearTimeout",
+  "console",
+  "document",
+  "fetch",
+  "performance",
+  "requestAnimationFrame",
+  "requestIdleCallback",
+  "setInterval",
+  "setTimeout",
+  "window",
+];
+
+// This is like the standard `browser` env in ESLint, but without all the weird
+// stuff.
+baseRules.browserEnv = () =>
+  Object.keys(globals.browser)
+    .filter(key => /^[A-Z]/.test(key))
+    .concat(lowercaseBrowserGlobals)
+    .reduce((result, key) => {
+      result[key] = false;
+      return result;
+    }, {});
+
+module.exports = baseRules;

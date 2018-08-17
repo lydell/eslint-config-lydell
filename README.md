@@ -25,8 +25,13 @@ for your ESLint config; see below.)
 const baseRules = require("eslint-config-lydell");
 
 module.exports = {
+  // Mix in rules from this config:
   rules: Object.assign({}, baseRules(), {
     // Your own rules here.
+  }),
+  // Optional: Less confusing `browser` env:
+  globals: Object.assign({}, baseRules.browserEnv(), {
+    // Your own globals here.
   }),
 };
 ```
@@ -50,6 +55,10 @@ The reason this config is `require`:d instead of using the `extends` field
 (which is the standard), is to easily allow `flow` to opt out from some base and
 `react` rules, for example.
 
+The config also comes with a browser env (globals), that is exactly like the
+standard `browser` env in ESLint but without all the weird stuff like `name` and
+`length`. (Prefix uncommon globals with `window.` or add them to your config.)
+
 ## Example configuration
 
 This includes some extra recommended plugins, that don't need a ton of
@@ -61,8 +70,7 @@ configuration:
 - [eslint-plugin-css-modules] \(if you use [CSS Modules])
 
 It also shows how to set up linting for config files, [Storybook stories] and
-[Jest] tests, as well as some globals you might want to use (instead of the
-bloated [browser env]; prefix uncommon globals with `window.`).
+[Jest] tests.
 
 ```js
 const baseRules = require("eslint-config-lydell");
@@ -94,15 +102,10 @@ module.exports = {
     // node: true, // For Node.js apps.
     // browser: true, // NOT recommended; see below.
   },
-  // Recommended: List the few common globals you actually use. Prefix other
-  // globals you need with `window.`.
-  globals: {
+  // Less confusing `browser` env (for browser apps):
+  globals: Object.assign({}, baseRules.browserEnv(), {
     DEBUG: false,
-    console: false,
-    document: false,
-    fetch: false,
-    window: false,
-  },
+  }),
   rules: Object.assign(
     {},
     // Merge in base rules, and enable the extra rules you want.
@@ -164,7 +167,6 @@ module.exports = {
 
 [MIT](LICENSE).
 
-[browser env]: https://github.com/sindresorhus/globals/blob/4ce1b7aa14ffc799a4e7b867e7d91c634ef81efb/globals.json#L223
 [css modules]: https://github.com/css-modules/css-modules
 [eslint issue #3458]: https://github.com/eslint/eslint/issues/3458
 [eslint-plugin-css-modules]: https://github.com/atfzl/eslint-plugin-css-modules
