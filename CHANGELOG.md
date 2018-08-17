@@ -1,3 +1,10 @@
+### Version 9.0.0 (2018-08-17)
+
+- Added: The [curly] rule, enforce braces around for example `if` and `for`
+  bodies.
+- Added: A custom browser env, that is exactly like the standard `browser` env
+  in ESLint but without all the weird stuff like `name` and `length`.
+
 ### Version 8.0.2 (2018-08-13)
 
 - Removed: [flowtype/boolean-style]. It can conflict with Prettier.
@@ -75,6 +82,7 @@
 - Initial release.
 
 [class-methods-use-this]: https://eslint.org/docs/rules/class-methods-use-this
+[curly]: https://eslint.org/docs/rules/curly
 [eslint 5.1.0]: https://eslint.org/blog/2018/07/eslint-v5.1.0-released
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
 [eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
