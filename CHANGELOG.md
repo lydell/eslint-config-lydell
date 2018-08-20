@@ -1,3 +1,8 @@
+### Version 9.0.1 (2018-08-20)
+
+- Changed: Switch to caret version range for dependencies, instead of pinning
+  them.
+
 ### Version 9.0.0 (2018-08-17)
 
 - Added: The [curly] rule, enforce braces around for example `if` and `for`
