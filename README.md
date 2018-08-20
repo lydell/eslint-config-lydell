@@ -140,6 +140,12 @@ module.exports = {
       },
     },
   ],
+  // If you use React:
+  settings: {
+    react: {
+      version: "16",
+    },
+  },
 };
 ```
 
