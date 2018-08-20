@@ -2,7 +2,8 @@
 
 Kinda strict [Prettier]-friendly ESLint config.
 
-- Only rules. No other config.
+- Only rules by default. No other config.
+  - Optional: A less confusing `browser` env.
 - No rules that that are unnecessary or might conflict with [Prettier].
 - Find errors.
 - Avoid potential problems.
