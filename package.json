@@ -21,7 +21,7 @@
     "test": "npm run test:lint && npm run test:jest && npm run test:prettier-friendly"
   },
   "dependencies": {
-    "globals": "11.7.0"
+    "globals": "^11.7.0"
   },
   "devDependencies": {
     "eslint": "5.3.0",
