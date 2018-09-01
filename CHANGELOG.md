@@ -1,3 +1,10 @@
+### Version 10.0.0 (2018-09-01)
+
+- Fixed: [spaced-comment] is now configured to support Flow type comments.
+- Removed: [arrow-body-style]. Sometimes functions can read better with braces
+  even if it contains just a single `return` statement.
+- Removed: [func-style]. Too little gain, too much debate.
+
 ### Version 9.0.1 (2018-08-20)
 
 - Changed: Switch to caret version range for dependencies, instead of pinning
@@ -86,6 +93,7 @@
 
 - Initial release.
 
+[arrow-body-style]: https://eslint.org/docs/rules/arrow-body-style
 [class-methods-use-this]: https://eslint.org/docs/rules/class-methods-use-this
 [curly]: https://eslint.org/docs/rules/curly
 [eslint 5.1.0]: https://eslint.org/blog/2018/07/eslint-v5.1.0-released
@@ -96,6 +104,7 @@
 [flowtype/boolean-style]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-boolean-style
 [flowtype/no-unused-expressions]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-unused-expressions
 [flowtype/require-return-type]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-require-return-type
+[func-style]: https://eslint.org/docs/rules/func-style
 [import/no-cycle]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md
 [import/no-self-import]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md
 [import/no-useless-path-segments]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
@@ -114,4 +123,5 @@
 [react/no-unsafe]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unsafe.md
 [react/no-unused-prop-types]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
 [require-await]: https://eslint.org/docs/rules/require-await
+[spaced-comment]: https://eslint.org/docs/rules/spaced-comment
 [yannickcr/eslint-plugin-react#1449]: https://github.com/yannickcr/eslint-plugin-react/issues/1449
