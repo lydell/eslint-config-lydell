@@ -13,7 +13,6 @@ function baseRules({
     builtin
       ? {
           "array-callback-return": "error",
-          "arrow-body-style": "error",
           "consistent-return": "error",
           "constructor-super": "error",
           curly: "error",
