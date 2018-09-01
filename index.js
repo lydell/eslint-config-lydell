@@ -20,7 +20,6 @@ function baseRules({
           "dot-notation": "error",
           "for-direction": "error",
           "func-name-matching": "error",
-          "func-style": ["error", "declaration"],
           "init-declarations": "error",
           "lines-between-class-members": [
             "error",
