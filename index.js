@@ -139,7 +139,16 @@ function baseRules({
           "prefer-spread": "error",
           "prefer-template": "error",
           "require-yield": "error",
-          "spaced-comment": "error",
+          "spaced-comment": [
+            "error",
+            "always",
+            {
+              block: {
+                markers: [":", "::"], // Support Flow type comments.
+                balanced: true,
+              },
+            },
+          ],
           "symbol-description": "error",
           "use-isnan": "error",
           "valid-typeof": "error",
