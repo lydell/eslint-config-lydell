@@ -90,12 +90,21 @@ function baseRules({
           "no-prototype-builtins": "error",
           "no-redeclare": "error",
           "no-regex-spaces": "error",
+          // Prettier-friendly subsitute for `"no-sequences": "error"`:
+          // https://github.com/prettier/eslint-config-prettier#no-sequences
+          "no-restricted-syntax": [
+            "error",
+            {
+              selector: "SequenceExpression",
+              message:
+                "The comma operator is confusing and a common mistake. Don’t use it!",
+            },
+          ],
           "no-return-assign": "error",
           "no-return-await": "error",
           "no-script-url": "error",
           "no-self-assign": "error",
           "no-self-compare": "error",
-          "no-sequences": "error",
           "no-shadow": "error",
           "no-shadow-restricted-names": "error",
           "no-sparse-arrays": "error",
