@@ -92,6 +92,7 @@ module.exports = {
     "css-modules",
     "flowtype-errors",
   ],
+  // Alternatively, use `parse: "babel-eslint"` (for Flow support).
   parserOptions: {
     sourceType: "module",
     ecmaFeatures: {
