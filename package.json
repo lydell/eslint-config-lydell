@@ -21,18 +21,18 @@
     "test": "npm run test:lint && npm run test:jest && npm run test:prettier-friendly"
   },
   "dependencies": {
-    "globals": "^11.7.0"
+    "globals": "^11.8.0"
   },
   "devDependencies": {
-    "eslint": "5.5.0",
-    "eslint-config-prettier": "3.0.1",
-    "eslint-plugin-flowtype": "2.50.0",
+    "eslint": "5.9.0",
+    "eslint-config-prettier": "3.2.0",
+    "eslint-plugin-flowtype": "3.2.0",
     "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-jest": "21.22.0",
-    "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-jest": "22.0.0",
+    "eslint-plugin-prettier": "3.0.0",
     "eslint-plugin-react": "7.11.1",
-    "jest": "23.5.0",
-    "prettier": "1.14.2",
+    "jest": "23.6.0",
+    "prettier": "1.15.2",
     "rimraf": "2.6.2"
   },
   "peerDependencies": {
