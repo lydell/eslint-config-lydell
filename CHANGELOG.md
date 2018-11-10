@@ -1,3 +1,8 @@
+### Version 11.0.0 (2018-11-10)
+
+- Changed: Replaced [no-sequences] with a [Prettier-friendly
+  alternative][no-sequences-alternative].
+
 ### Version 10.0.0 (2018-09-01)
 
 - Fixed: [spaced-comment] is now configured to support Flow type comments.
@@ -114,6 +119,8 @@
 [no-inner-declarations]: https://eslint.org/docs/rules/no-inner-declarations
 [no-negated-condition]: https://eslint.org/docs/rules/no-negated-condition
 [no-return-await]: https://eslint.org/docs/rules/no-return-await
+[no-sequences-alternative]: https://github.com/prettier/eslint-config-prettier#no-sequences
+[no-sequences]: https://eslint.org/docs/rules/no-sequences
 [no-undef]: https://eslint.org/docs/rules/no-undef
 [no-unexpected-multiline]: https://eslint.org/docs/rules/no-unexpected-multiline
 [react/button-has-type]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
