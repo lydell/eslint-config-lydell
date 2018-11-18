@@ -3,6 +3,7 @@
 const baseRules = require(".");
 
 module.exports = {
+  root: true,
   plugins: ["flowtype", "import", "jest", "prettier", "react"],
   env: {
     es6: true,

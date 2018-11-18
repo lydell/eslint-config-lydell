@@ -77,6 +77,8 @@ It also shows how to set up linting for config files, [Storybook stories] and
 const baseRules = require("eslint-config-lydell");
 
 module.exports = {
+  // Prevent config files outside the repo from interfering.
+  root: true,
   plugins: [
     // Provides rules for these plugins:
     "import",
