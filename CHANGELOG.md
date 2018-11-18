@@ -1,3 +1,9 @@
+### Version 12.0.0 (2018-11-TODO)
+
+- Removed: [import/order]. It's recommended to use
+  [eslint-plugin-simple-import-sort] instead (and [import/order] for code that
+  uses `require`, if you want to.)
+
 ### Version 11.0.0 (2018-11-10)
 
 - Changed: Replaced [no-sequences] with a [Prettier-friendly
@@ -104,6 +110,7 @@
 [eslint 5.1.0]: https://eslint.org/blog/2018/07/eslint-v5.1.0-released
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
 [eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
+[eslint-plugin-simple-import-sort]: https://github.com/lydell/eslint-plugin-simple-import-sort/
 [flowtype/array-style-complex-type]: https://github.com/gajus/eslint-plugin-flowtype#array-style-complex-type
 [flowtype/array-style-simple-type]: https://github.com/gajus/eslint-plugin-flowtype#array-style-simple-type
 [flowtype/boolean-style]: https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-boolean-style
