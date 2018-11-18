@@ -66,7 +66,7 @@ This includes some extra recommended plugins, that don't need a ton of
 configuration:
 
 - [eslint-plugin-prettier]
-- [eslint-plugin-sort-imports-es6-autofix]
+- [eslint-plugin-simple-import-sort]
 - [eslint-plugin-flowtype-errors] \(if you use [Flow])
 - [eslint-plugin-css-modules] \(if you use [CSS Modules])
 
@@ -88,7 +88,7 @@ module.exports = {
 
     // Recommended plugins:
     "prettier",
-    "sort-imports-es6-autofix",
+    "simple-import-sort",
 
     // Recommended if using CSS Modules or Flow:
     "css-modules",
@@ -120,12 +120,13 @@ module.exports = {
       "css-modules/no-undef-class": "error",
       "flowtype-errors/show-errors": "error",
       "prettier/prettier": "error",
-      "sort-imports-es6-autofix/sort-imports-es6": "error",
+      "simple-import-sort/sort": "error",
     }
   ),
   // Example on how to configure certain config files and such.
   overrides: [
     {
+      // Config files.
       files: [".*.js", "*.config.js", ".storybook/*.js"],
       env: { node: true },
       rules: {
@@ -133,15 +134,25 @@ module.exports = {
       },
     },
     {
+      // Jest tests.
       files: ["*.test.js"],
       env: { jest: true },
       // You can also enable Jest rules only for test files if you want.
       rules: baseRules({ builtin: false, jest: true }),
     },
     {
+      // Storybook stories.
       files: ["stories.js"],
       globals: {
         module: false,
+      },
+    },
+    {
+      // Node.js code.
+      files: ["server/**/*.js"],
+      env: { node: true },
+      rules: {
+        "import/order": ["error", { "newlines-between": "always" }],
       },
     },
   ],
@@ -187,7 +198,7 @@ module.exports = {
 [eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
 [eslint-plugin-prettier]: https://github.com/prettier/eslint-plugin-prettier
 [eslint-plugin-react]: https://github.com/yannickcr/eslint-plugin-react
-[eslint-plugin-sort-imports-es6-autofix]: https://github.com/marudor/eslint-plugin-sort-imports-es6-autofix
+[eslint-plugin-simple-import-sort]: https://github.com/lydell/eslint-plugin-simple-import-sort/
 [flow]: https://flow.org/
 [jest]: https://facebook.github.io/jest/
 [prettier.config.js]: https://prettier.io/docs/en/configuration.html

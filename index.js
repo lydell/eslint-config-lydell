@@ -218,7 +218,6 @@ function baseRules({
           "import/no-self-import": "error",
           "import/no-unresolved": ["error", { commonjs: true }],
           "import/no-useless-path-segments": "error",
-          "import/order": ["error", { "newlines-between": "always" }],
         }
       : {},
 
