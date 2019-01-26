@@ -1,4 +1,4 @@
-### Version 12.0.0 (2018-11-TODO)
+### Version 12.0.0 (2018-11-18)
 
 - Removed: [import/order]. It's recommended to use
   [eslint-plugin-simple-import-sort] instead (and [import/order] for code that
