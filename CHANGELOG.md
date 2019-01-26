@@ -1,3 +1,11 @@
+### Version 13.0.0 (2019-01-26)
+
+- Added: [react/jsx-fragments].
+- Added: [jest/no-truthy-falsy].
+- Changed: Removed [prefer-arrow-callback] since it [can conflict with
+  Prettier][arrow-conflict].
+- Changed: Recommend using `version: "detect"` for eslint-plugin-react.
+
 ### Version 12.0.0 (2018-11-18)
 
 - Removed: [import/order]. It's recommended to use
@@ -105,6 +113,7 @@
 - Initial release.
 
 [arrow-body-style]: https://eslint.org/docs/rules/arrow-body-style
+[arrow-conflict]: https://github.com/prettier/eslint-config-prettier/blob/2c842675e55b91aecaef6f997d234ebf2d220ffb/README.md#arrow-body-style-and-prefer-arrow-callback
 [class-methods-use-this]: https://eslint.org/docs/rules/class-methods-use-this
 [curly]: https://eslint.org/docs/rules/curly
 [eslint 5.1.0]: https://eslint.org/blog/2018/07/eslint-v5.1.0-released
@@ -121,6 +130,7 @@
 [import/no-self-import]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md
 [import/no-useless-path-segments]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
 [import/order]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
+[jest/no-truthy-falsy]: https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-truthy-falsy.md
 [lines-between-class-members]: https://eslint.org/docs/rules/lines-between-class-members
 [no-catch-shadow]: https://eslint.org/docs/rules/no-catch-shadow
 [no-inner-declarations]: https://eslint.org/docs/rules/no-inner-declarations
@@ -130,10 +140,12 @@
 [no-sequences]: https://eslint.org/docs/rules/no-sequences
 [no-undef]: https://eslint.org/docs/rules/no-undef
 [no-unexpected-multiline]: https://eslint.org/docs/rules/no-unexpected-multiline
+[prefer-arrow-callback]: https://eslint.org/docs/rules/prefer-arrow-callback
 [react/button-has-type]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
 [react/default-props-match-prop-types]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
 [react/display-name]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
 [react/jsx-curly-brace-presence]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
+[react/jsx-fragments]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md
 [react/no-unsafe]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unsafe.md
 [react/no-unused-prop-types]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
 [require-await]: https://eslint.org/docs/rules/require-await
