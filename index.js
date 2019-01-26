@@ -139,7 +139,6 @@ function baseRules({
           "object-shorthand": "error",
           "one-var": ["error", "never"],
           "operator-assignment": "error",
-          "prefer-arrow-callback": "error",
           "prefer-const": "error",
           "prefer-destructuring": ["error", { array: false, object: true }],
           "prefer-numeric-literals": "error",
@@ -229,6 +228,7 @@ function baseRules({
           "jest/no-jasmine-globals": "error",
           "jest/no-jest-import": "error",
           "jest/no-test-prefixes": "error",
+          "jest/no-truthy-falsy": "error",
           "jest/prefer-to-be-null": "error",
           "jest/prefer-to-be-undefined": "error",
           "jest/prefer-to-have-length": "error",
@@ -242,6 +242,7 @@ function baseRules({
       ? {
           "react/button-has-type": "error",
           "react/default-props-match-prop-types": flow ? "off" : "error",
+          "react/jsx-fragments": "error",
           "react/jsx-key": "error",
           "react/jsx-no-comment-textnodes": "error",
           "react/jsx-no-duplicate-props": "error",
