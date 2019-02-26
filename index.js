@@ -268,7 +268,6 @@ function baseRules({
           "react/react-in-jsx-scope": "error",
           "react/require-default-props": "error",
           "react/require-render-return": "error",
-          "react/self-closing-comp": "error",
           "react/style-prop-object": "error",
         }
       : {}
