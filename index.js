@@ -160,7 +160,6 @@ function baseRules({
           "symbol-description": "error",
           "use-isnan": "error",
           "valid-typeof": "error",
-          camelcase: ["error", { properties: "never" }],
           eqeqeq: ["error", "always", { null: "ignore" }],
           radix: "error",
           strict: "error",
