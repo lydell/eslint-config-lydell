@@ -241,6 +241,8 @@ function baseRules({
 
     react
       ? {
+          "react-hooks/exhaustive-deps": "error",
+          "react-hooks/rules-of-hooks": "error",
           "react/button-has-type": "error",
           "react/default-props-match-prop-types": flow ? "off" : "error",
           "react/jsx-fragments": "error",

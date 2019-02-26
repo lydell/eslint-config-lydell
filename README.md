@@ -43,6 +43,7 @@ A few ESLint plugins are supported as well:
 - [eslint-plugin-import]
 - [eslint-plugin-jest]
 - [eslint-plugin-react]
+- [eslint-plugin-react-hooks]
 
 Note that you need to install those plugins yourself. (They are not included in the config because of [ESLint issue #3458].)
 
@@ -85,6 +86,7 @@ module.exports = {
     "jest",
     "flowtype",
     "react",
+    "react-hooks",
 
     // Recommended plugins:
     "prettier",
@@ -197,6 +199,7 @@ module.exports = {
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
 [eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
 [eslint-plugin-prettier]: https://github.com/prettier/eslint-plugin-prettier
+[eslint-plugin-react-hooks]: https://www.npmjs.com/package/eslint-plugin-react-hooks
 [eslint-plugin-react]: https://github.com/yannickcr/eslint-plugin-react
 [eslint-plugin-simple-import-sort]: https://github.com/lydell/eslint-plugin-simple-import-sort/
 [flow]: https://flow.org/
