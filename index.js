@@ -232,6 +232,7 @@ function baseRules({
           "jest/prefer-to-be-null": "error",
           "jest/prefer-to-be-undefined": "error",
           "jest/prefer-to-have-length": "error",
+          "jest/prefer-todo": "error",
           "jest/valid-describe": "error",
           "jest/valid-expect": "error",
           "jest/valid-expect-in-promise": "error",
