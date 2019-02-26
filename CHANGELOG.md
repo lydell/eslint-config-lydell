@@ -1,3 +1,13 @@
+### Version 14.0.0 (2019-02-26)
+
+- Added: [jest/prefer-todo].
+- Added: [eslint-plugin-react-hooks] rules. This plugin is now _required_ to
+  install if you use `react: true`.
+- Removed: [react/self-closing-comp]. It’s not needed when using Prettier.
+- Removed: [camelcase]. API’s often uses snake case in response objects, and
+  it’s annoying not being able to do `const { full_name } = apiResponse`
+  without renaming.
+
 ### Version 13.0.0 (2019-01-26)
 
 - Added: [react/jsx-fragments].
@@ -114,11 +124,13 @@
 
 [arrow-body-style]: https://eslint.org/docs/rules/arrow-body-style
 [arrow-conflict]: https://github.com/prettier/eslint-config-prettier/blob/2c842675e55b91aecaef6f997d234ebf2d220ffb/README.md#arrow-body-style-and-prefer-arrow-callback
+[camelcase]: https://eslint.org/docs/rules/camelcase
 [class-methods-use-this]: https://eslint.org/docs/rules/class-methods-use-this
 [curly]: https://eslint.org/docs/rules/curly
 [eslint 5.1.0]: https://eslint.org/blog/2018/07/eslint-v5.1.0-released
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
 [eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
+[eslint-plugin-react-hooks]: https://www.npmjs.com/package/eslint-plugin-react-hooks
 [eslint-plugin-simple-import-sort]: https://github.com/lydell/eslint-plugin-simple-import-sort/
 [flowtype/array-style-complex-type]: https://github.com/gajus/eslint-plugin-flowtype#array-style-complex-type
 [flowtype/array-style-simple-type]: https://github.com/gajus/eslint-plugin-flowtype#array-style-simple-type
@@ -131,6 +143,7 @@
 [import/no-useless-path-segments]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
 [import/order]: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
 [jest/no-truthy-falsy]: https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-truthy-falsy.md
+[jest/prefer-todo]: https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-todo.md
 [lines-between-class-members]: https://eslint.org/docs/rules/lines-between-class-members
 [no-catch-shadow]: https://eslint.org/docs/rules/no-catch-shadow
 [no-inner-declarations]: https://eslint.org/docs/rules/no-inner-declarations
