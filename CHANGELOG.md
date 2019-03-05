@@ -161,6 +161,7 @@
 [react/jsx-fragments]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md
 [react/no-unsafe]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unsafe.md
 [react/no-unused-prop-types]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
+[react/self-closing-comp]: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
 [require-await]: https://eslint.org/docs/rules/require-await
 [spaced-comment]: https://eslint.org/docs/rules/spaced-comment
 [yannickcr/eslint-plugin-react#1449]: https://github.com/yannickcr/eslint-plugin-react/issues/1449
